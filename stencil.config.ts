@@ -6,15 +6,12 @@ export const config: Config = {
     taskQueue: "async",
     outputTargets: [
         {
-            type: "dist-custom-elements" as any,
-        },
-        {
             type: "dist-custom-elements-bundle",
         },
-        // {
-        //   type: 'dist',
-        //   esmLoaderPath: '../loader',
-        // },
+        {
+            type: "dist",
+            esmLoaderPath: "../loader",
+        },
         // {
         //   type: 'docs-readme'
         // },
